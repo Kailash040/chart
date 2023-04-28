@@ -40,6 +40,7 @@ function LineChart() {
 
   return (
     <>
+  <h1>LineChart</h1>
       <ReactEcharts option={option} />
     </>
   );

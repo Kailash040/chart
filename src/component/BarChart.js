@@ -46,7 +46,7 @@ const option = {
  
 return (
     <>
-    
+    <h1>BarChart</h1>
 <ReactEcharts option={option}  />
 
     </>
