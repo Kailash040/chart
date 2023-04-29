@@ -22,15 +22,23 @@ function LineChart() {
   const option = {
     xAxis: {
       type: "category",
-      data: data.map((val) => val.Flavanoids),
+     
+      
     },
     yAxis: {
-      type: "value",
+      type: "category",
+      
     },
     series: [
       {
-        data: data.map((val) => val.Ash),
+        data: data.map((val) => val.Flavanoids),
         type: "line",
+        stack:"x"
+      },{
+        data: data.map((val) => val.Ash
+        ),
+        type: "line",
+        stack:"y"
       },
     ],
     tooltip: {

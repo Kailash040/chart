@@ -24,20 +24,28 @@ function BarChart() {
     },[])
 //barChart 
 const option = {
-  xAxis: {
-    type: 'category',
-    data: data.map((val)=>val.Alcohol)
-  },
-  yAxis: {
-    type: 'value'
-  },
+ xAxis: {
+      type: "category",
+     
+      
+    },
+    yAxis: {
+      type: "category",
+      
+    },
   series: [
     {
-      data: data.map((val)=>val.Magnesium),
-      type: 'bar'
+      data: data.map((val)=>val.Alcohol),
+      type: 'bar',
+      stack:"x"
     }
     ,
-    
+    {
+      data: data.map((val)=>val.Magnesium),
+      type: 'bar',
+      stack:"y"
+    }
+    ,
   ],
   tooltip: {
     trigger: "axis"
