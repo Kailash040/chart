@@ -35,13 +35,13 @@ const option = {
     },
   series: [
     {
-      data: data.map((val)=>val.Alcohol),
+      data: data.slice(0,3).map((val)=>val.Alcohol),
       type: 'bar',
       stack:"x"
     }
     ,
     {
-      data: data.map((val)=>val.Magnesium),
+      data: data.slice(0,3).map((val)=>val.Magnesium),
       type: 'bar',
       stack:"y"
     }
