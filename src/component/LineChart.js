@@ -31,11 +31,11 @@ function LineChart() {
     },
     series: [
       {
-        data: data.map((val) => val.Flavanoids),
+        data: data.slice(0,1).map((val) => val.Flavanoids),
         type: "line",
         stack:"x"
       },{
-        data: data.map((val) => val.Ash
+        data: data.slice(0,1).map((val) => val.Ash
         ),
         type: "line",
         stack:"y"
